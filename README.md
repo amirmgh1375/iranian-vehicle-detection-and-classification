@@ -25,6 +25,9 @@ To collect data and create this dataset of common vehicles in Iran, a script was
 
 Ultimately, a dataset containing 148414 images of various classes was prepared. Table I displays 3 vehicles in the database by brand, model and number.
 
+<!-- ![paper_dataset](https://user-images.githubusercontent.com/25933029/213681890-b98f2afa-c944-484f-9c6c-1911351ca920.png) -->
+<img src="https://user-images.githubusercontent.com/25933029/213681890-b98f2afa-c944-484f-9c6c-1911351ca920.png" width="500" height="350">
+
 To download the dataset, please send your request to my email amirmg.1375@gmail.com.
 
 ## RESULTS

@@ -11,6 +11,7 @@ Due to the rapid growth of vehicles, traffic monitoring and tracking systems in 
 There are various methods to extract   and classify the features available in a vehicle image. In this   study, two different scenarios were employed to classify and identify vehicle type and its location in the image. The first scenario involves combining an SSD object detection network in the image to determine the vehicle location and a ResNet  convolutional class network to identify vehicle type. In the second scenario, which is the approach proposed in this paper,  the YOLO algorithm is used to train an end-to-end network for the seamless and direct detection of all vehicles in the image.
 
 <!-- ![paper_res44](https://user-images.githubusercontent.com/25933029/213679776-bf561610-5a45-4a99-886e-139233bc3d19.png) -->
+<img src="https://user-images.githubusercontent.com/25933029/213679776-bf561610-5a45-4a99-886e-139233bc3d19.png" width="500" height="350">
 
 ## Data Collection and dataset creation
 To collect data and create this dataset of common vehicles in Iran, a script was implemented which surveyed car dealing websites  and  extracted  and  saved  images  of  vehicles  in available categories. Then, by examining the number of images of cars in each class, categories with over 400 images were selected for testing. A total of 95 vehicle classes were prepared to conduct the experiment. Images removed from other classes are included in class 115, which has been considered for making models other than the models in the main classes.  
@@ -44,10 +45,10 @@ accuracy was obtained in experiment 2. As we observe, the second method is more 
 
 
 <!-- ![paper_res](https://user-images.githubusercontent.com/25933029/213677822-2c61a52a-e7e7-4267-911b-6716770a1256.png) -->
-
+<img src="https://user-images.githubusercontent.com/25933029/213677822-2c61a52a-e7e7-4267-911b-6716770a1256.png" width="500" height="350">
 
 <!-- ![paper_res_tables](https://user-images.githubusercontent.com/25933029/213677873-21474ac5-65dd-4596-8675-1ff2d5c2f7f0.png) -->
-
+<img src="https://user-images.githubusercontent.com/25933029/213677873-21474ac5-65dd-4596-8675-1ff2d5c2f7f0.png" width="500" height="200">
 
 ## How to run the model
 

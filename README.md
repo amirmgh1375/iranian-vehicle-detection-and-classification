@@ -10,14 +10,17 @@ Due to the rapid growth of vehicles, traffic monitoring and tracking systems in 
 ## PROPOSED METHOD
 There are various methods to extract   and classify the features available in a vehicle image. In this   study, two different scenarios were employed to classify and identify vehicle type and its location in the image. The first scenario involves combining an SSD object detection network in the image to determine the vehicle location and a ResNet  convolutional class network to identify vehicle type. In the second scenario, which is the approach proposed in this paper,  the YOLO algorithm is used to train an end-to-end network for the seamless and direct detection of all vehicles in the image.
 
+<!-- ![paper_res44](https://user-images.githubusercontent.com/25933029/213679776-bf561610-5a45-4a99-886e-139233bc3d19.png) -->
+
 ## Data Collection and dataset creation
 To collect data and create this dataset of common vehicles in Iran, a script was implemented which surveyed car dealing websites  and  extracted  and  saved  images  of  vehicles  in available categories. Then, by examining the number of images of cars in each class, categories with over 400 images were selected for testing. A total of 95 vehicle classes were prepared to conduct the experiment. Images removed from other classes are included in class 115, which has been considered for making models other than the models in the main classes.  
 
 | Row | Vehicle | Model | Number |
 |--|--|--|--|
 |1 | Saipa | Pride | 14833 |
-|1 | IranKhodro| Peykan| 7442|
-|1 | Peugeot| Pride | 7367|
+|2 | IranKhodro| Peykan| 7442|
+|3 | Peugeot| Pride | 7367|
+|... | ...| ... | ...|
 
 Ultimately, a dataset containing 148414 images of various classes was prepared. Table I displays 3 vehicles in the database by brand, model and number.
 
@@ -39,6 +42,13 @@ accuracy was obtained in experiment 2. As we observe, the second method is more 
 | Recall         | 0.9           | 0.88          | 0.73        |
 | F1-score       | 0.9           | 0.89          | 0.72        |
 
+
+<!-- ![paper_res](https://user-images.githubusercontent.com/25933029/213677822-2c61a52a-e7e7-4267-911b-6716770a1256.png) -->
+
+
+<!-- ![paper_res_tables](https://user-images.githubusercontent.com/25933029/213677873-21474ac5-65dd-4596-8675-1ff2d5c2f7f0.png) -->
+
+
 ## How to run the model
 
 First download the pretrained cnn model from this link address
@@ -47,6 +57,19 @@ https://drive.google.com/open?id=13x7I9UyVLSReSJAmoroRNjqEUyyYxNvz
 
 
 Then run the `test_predict.py` notebooke and get the results.
+
+## Citation
+```
+@INPROCEEDINGS{9116922,
+  author={Ghoreyshi, Amir Mohammad and AkhavanPour, Alireza and Bossaghzadeh, Alireza},
+  booktitle={2020 International Conference on Machine Vision and Image Processing (MVIP)}, 
+  title={Simultaneous Vehicle Detection and Classification Model based on Deep YOLO Networks}, 
+  year={2020},
+  volume={},
+  number={},
+  pages={1-6},
+  doi={10.1109/MVIP49855.2020.9116922}}
+```
 
 
 ---
